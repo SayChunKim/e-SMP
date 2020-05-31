@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TableLayout
+        android:id="@+id/tbl_test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:stretchColumns="1"
+        android:gravity="clip_vertical">
+
+
+        <TableRow android:background="#ffffff" android:layout_margin="1dp">
+
+            <TextView android:text="No." android:layout_column="0"
+                android:textColor="#000000" />
+            <TextView android:text="Course Code" android:layout_column="1"
+                android:gravity="center_horizontal"
+                android:textColor="#000000" />
+            <TextView android:text="Cource Name" android:layout_column="2"
+                android:gravity="center_horizontal"
+                android:textColor="#000000" />
+            <TextView android:text="Grade" android:layout_column="3"
+                android:gravity="center_horizontal"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView android:text="1" android:layout_column="0" />
+            <TextView android:text="CSMM001" android:layout_column="1"
+                android:gravity="center_horizontal" />
+            <TextView android:text="Statistic &amp; Maths" android:layout_column="2"
+                android:gravity="center_horizontal" />
+            <TextView android:text="A" android:layout_column="3"
+                android:gravity="center_horizontal" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:paddingRight="2dp">
+
+            <TextView android:text="2" android:layout_column="0" />
+            <TextView android:text="CSAD002" android:layout_column="1"
+                android:gravity="center_horizontal" />
+            <TextView android:text="Introduction to Android" android:layout_column="2"
+                android:gravity="center_horizontal" />
+            <TextView android:text="A" android:layout_column="3"
+                android:gravity="center_horizontal" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:paddingRight="2dp">
+
+            <TextView android:text="3" android:layout_column="0" />
+            <TextView android:text="CSAD002" android:layout_column="1"
+                android:gravity="center_horizontal" />
+            <TextView android:text="Java Programming" android:layout_column="2"
+                android:gravity="center_horizontal" />
+            <TextView android:text="C+" android:layout_column="3"
+                android:gravity="center_horizontal"
+                 />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:paddingRight="4dp"
+            >
+
+            <TextView android:text="4" android:layout_column="0"
+                 />
+            <TextView android:text="SCUN005" android:layout_column="1"
+                android:gravity="center_horizontal"
+                 />
+            <TextView android:text="Social Work" android:layout_column="2"
+                android:gravity="center_horizontal" />
+            <TextView android:text="A" android:layout_column="3"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

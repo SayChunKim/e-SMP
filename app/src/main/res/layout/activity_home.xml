@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:gravity="center_vertical|center_horizontal">
+
+
+    /*row 1*/
+
+    /*row 2*/
+
+    /*row 3*/
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exam Result"
+        android:drawableTop="@drawable/result"
+        android:layout_weight="0.90"
+        android:id="@+id/resultBtn"
+        android:layout_gravity="center"
+        android:onClick="resultClick"
+        android:padding="30dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:layout_alignTop="@+id/logoutBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/timetableBtn"
+        android:layout_alignEnd="@+id/timetableBtn"
+        android:layout_alignBottom="@+id/logoutBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.13"
+        android:drawableTop="@drawable/logout"
+        android:text="Logout"
+        android:id="@+id/logoutBtn"
+        android:layout_gravity="center"
+        android:onClick="logoutClick"
+        android:padding="35dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_below="@+id/verifyButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/verifyButton"
+        android:layout_alignStart="@+id/verifyButton" />
+
+    <Button
+        android:layout_width="170dp"
+
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:layout_weight="1.95"
+        android:id="@+id/profileBtn"
+        android:drawableTop="@drawable/profile_pic"
+        android:onClick="profileClick"
+        android:enabled="true"
+        android:clickable="true"
+        android:padding="30dp"
+        android:layout_alignTop="@+id/registerBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/timetableBtn" />
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="143dp"
+    android:text="Timetable"
+    android:drawableTop="@drawable/timetable"
+    android:layout_weight="1.49"
+    android:id="@+id/timetableBtn"
+    android:layout_gravity="center"
+    android:onClick="timetableClick"
+        android:padding="30dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="176dp"
+        android:layout_alignRight="@+id/profileBtn"
+        android:layout_alignEnd="@+id/profileBtn" />
+
+    <Button
+       android:layout_width="173dp"
+       android:layout_height="wrap_content"
+       android:text="Course Verification"
+       android:id="@+id/verifyButton"
+       android:drawableTop="@drawable/course_verify"
+       android:layout_gravity="center"
+           android:onClick="courseVerifyClick"
+           android:padding="25dp"
+           android:clickable="true"
+           android:enabled="true"
+        android:layout_below="@+id/profileBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/registerBtn"
+        android:layout_alignStart="@+id/registerBtn" />
+
+    <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/course_regis"
+            android:text="Course Registration"
+        android:id="@+id/registerBtn"
+            android:onClick="courseRegistrationClick"
+            android:padding="30dp"
+            android:layout_weight="0.00"
+            android:clickable="true"
+            android:enabled="true"
+        android:layout_above="@+id/timetableBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
